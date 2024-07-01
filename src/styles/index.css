@@ -1,0 +1,30 @@
+:root,
+body,
+.root {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background: url('../assets/ian-talmacs-_uL438Qm2LY-unsplash.jpg') rgb(114, 188, 238) no-repeat fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+
+.icon {
+  width: 1.3em;
+  color:  rgb(20, 148, 253);
+  border-radius: 1em;
+}

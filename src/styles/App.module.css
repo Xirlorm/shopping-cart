@@ -1,0 +1,36 @@
+.container {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.navLinks a {
+  color: rgb(0, 0, 0);
+  background-color: rgb(20, 148, 253);
+  padding: 0.2em 0.8em;
+  border-radius: 12em;
+}
+
+.logoElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 0.2em;
+}
+
+.logoElement > img {
+  width: 1.3em;
+  height: 1.3em;
+}
