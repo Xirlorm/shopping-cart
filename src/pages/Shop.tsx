@@ -1,5 +1,7 @@
 function Shop() {
-  return (<>Shopping page</>)
+  return (
+    <div className="shop">Shop</div>
+  )
 }
 
 export default Shop
