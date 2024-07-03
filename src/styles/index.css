@@ -3,13 +3,6 @@ body,
 .root {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
-}
-
-body {
-  background: url('../assets/ian-talmacs-aQOm_2cadQs-unsplash.jpg') no-repeat fixed;
-  background-size: cover;
 }
 
 @font-face {

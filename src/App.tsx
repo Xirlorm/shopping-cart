@@ -8,9 +8,10 @@ function App() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>
-          <Link to='/'><img src={Logo} alt='Site logo' />Shop-Bag</Link>
-        </h1>
+        <Link to='/' className={styles.logo}>
+          <img src={Logo} alt='Site logo' />
+          <h1>ShopHaven</h1>
+        </Link>
         <nav>
           <Link to='/'>Home</Link>
           <Link to='shop'>Shop</Link>
@@ -22,6 +23,8 @@ function App() {
           </Link>
         </nav>
       </header>
+      <div>
+      </div>
       <Outlet />
       <footer className={styles.footer}>Footer</footer>
     </div>
