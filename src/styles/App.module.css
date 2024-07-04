@@ -1,13 +1,34 @@
 @media screen and (min-width: 480px) {
   .hero {
-    min-width: 500px;
+    min-width: 410px;
     margin: 1.2em;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero {
     min-width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header nav {
+    background-color: #6b8c92;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
   }
 }
 
@@ -18,32 +39,21 @@
 
 /* ---- Header ----- */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   left: 0;
   top: 0;
-  backdrop-filter: blur(1em);
-  padding: 0.4em 0.6em;
-}
-
-header,
-footer,
-button   {
-  background-color: rgba(6, 2, 39, 0.733);
-  color: #fff;
+  margin: 0;
+  background-color: rgb(90, 131, 131);
 }
 
 .header a {
   text-decoration: none;
   font-weight: 600;
-  color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
 
 .logo h1 {
-  margin-block: 0;
+  margin-block: 0.5rem;
   font-weight: 700;
   font-family: satisfy, sans-serif;
 }
@@ -62,7 +72,8 @@ button   {
 .header nav {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 1em;
+  padding: 0.5rem;
 }
 
 .icon {
@@ -109,8 +120,48 @@ button   {
 
 /* ---- Footer ---- */
 footer {
+  background-color: darkslategrey;
+  color: #fff;
   font-weight: 500;
   font-family: sans-serif;
+  padding: 2rem  1.5rem;
   margin-bottom: 0;
-  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer > section {
+  min-width: 320px;
+}
+
+footer .logo {
+  margin: 1.2rem 0;
+}
+
+footer h3 {
+  margin: 0.2rem 0;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+}
+
+footer li {
+  padding: 0.2rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #9ac0ca;
+  font-weight: 500;
+}
+
+.socialHandles a {
+  display: flex;
+  align-content: center;
+  gap: 0.4rem;
 }

@@ -9,3 +9,13 @@ body,
   font-family: satisfy;
   src: url(../assets/fonts/Satisfy-Regular.ttf);
 }
+
+main {
+  background-image: url(../assets/jacek-dylag-jo8C9bt3uo8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0.3rem;
+}
+
+
