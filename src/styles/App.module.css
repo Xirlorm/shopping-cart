@@ -27,7 +27,7 @@
   .header nav {
     background-color: #6b8c92;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0;
   }
 }
@@ -136,7 +136,7 @@ footer > section {
 }
 
 footer .logo {
-  margin: 1.2rem 0;
+  justify-content: center;
 }
 
 footer h3 {
@@ -164,4 +164,8 @@ footer a {
   display: flex;
   align-content: center;
   gap: 0.4rem;
+}
+
+footer section:last-child {
+  text-align: center;
 }
