@@ -1,10 +1,10 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components";
 
 const tileStyle = `
   background: #000;
   width: 8px;
   height: 8px;
-`
+`;
 
 const animation = keyframes`
   50% {
@@ -17,7 +17,7 @@ const animation = keyframes`
   from, to {
     transform: translateY(-20px);
   }
-`
+`;
 
 const Container = styled.div`
   display: inline-flex;
@@ -27,22 +27,22 @@ const Container = styled.div`
   padding: 2em 1.4em;
   background: transparent;
   perspective: 20px;
-`
+`;
 
 const Tile1 = styled.div`
   ${tileStyle}
   animation: ${animation} linear 1.3s infinite .3s;
-`
+`;
 
 const Tile2 = styled.div`
   ${tileStyle}
   animation: ${animation} linear 1.3s infinite .6s;
-`
+`;
 
 const Tile3 = styled.div`
   ${tileStyle}
   animation: ${animation} linear 1.3s infinite .9s;
-`
+`;
 
 function Loader() {
   return (
@@ -51,7 +51,7 @@ function Loader() {
       <Tile2 />
       <Tile3 />
     </Container>
-  )
+  );
 }
 
-export default Loader
+export default Loader;

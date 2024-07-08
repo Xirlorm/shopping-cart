@@ -1,6 +1,6 @@
-async function fetchData(args: string = '') {
+async function fetchData(args: string = '', optional: object = {}) {
   try {
-    const response = await fetch(`https://fakestoreapi.com/${args}`)
+    const response = await fetch(`https://fakestoreapi.com/${args}`, optional)
     
     if (!response.ok) {
       throw new Error('An error occured while fetching data')

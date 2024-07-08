@@ -3,7 +3,7 @@
     min-width: 410px;
     margin: 1.2em;
   }
-  
+
   .header {
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +78,7 @@
 
 .icon {
   width: 1.4em;
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* ---- Home page ---- */
@@ -124,7 +124,7 @@ footer {
   color: #fff;
   font-weight: 500;
   font-family: sans-serif;
-  padding: 2rem  1.5rem;
+  padding: 2rem 1.5rem;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
