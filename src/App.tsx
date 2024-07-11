@@ -6,7 +6,7 @@ import Header from './components/Header'
 import { useState } from 'react'
 
 function App() {
-  const [itemsInCart, setItemsInCart] = useState(0)
+  const [itemsInCart, setItemsInCart] = useState(1)
 
   return (
     <AppContext.Provider value={{

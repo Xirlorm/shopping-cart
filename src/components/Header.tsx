@@ -29,7 +29,7 @@ function Header() {
         </Link>
         <Link to='cart'>
           <ShoppingCartIcon className={styles.icon} aria-label='Cart icon' />
-          <span>{itemsInCart}</span>
+          {itemsInCart !== 0 && <sub className={styles.itemsInCart}>{itemsInCart}</sub>}
         </Link>
       </nav>
     </header>

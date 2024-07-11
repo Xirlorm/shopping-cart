@@ -22,8 +22,8 @@ const animation = keyframes`
 const Container = styled.div`
   display: inline-flex;
   justify-content: center;
-  gap: 0.8em;
   items-align: center;
+  gap: 0.8em;
   padding: 2em 1.4em;
   background: transparent;
   perspective: 20px;
