@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it } from 'vitest';
 import React from 'react';
-import Home from '../src/pages/Home';
+import App from '../src/App';
 
 describe('App', () => {
-  it('renders', () => {
-    render(<Home />);
+  it('renders', async() => {
+    render(<App />);
     screen.debug();
   });
 });

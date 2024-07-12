@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { product } from "../utilities/types";
 import styles from '../styles/App.module.css'
-import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid';
+import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 
 function Product(props: {details: product}) {
   return (
@@ -10,9 +10,9 @@ function Product(props: {details: product}) {
       <h3>{props.details.title}</h3>
       <div>${props.details.price}</div>
       <section>
-        <button><MinusIcon width={20}/></button>
+        <button><ChevronDownIcon width={22}/></button>
         <p>0</p>
-        <button><PlusIcon width={20}/></button>
+        <button><ChevronUpIcon width={22}/></button>
       </section>
     </div>
   );

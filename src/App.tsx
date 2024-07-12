@@ -6,7 +6,7 @@ import Header from './components/Header'
 import { useState } from 'react'
 
 function App() {
-  const [itemsInCart, setItemsInCart] = useState(1)
+  const [itemsInCart, setItemsInCart] = useState(0)
 
   return (
     <AppContext.Provider value={{
@@ -15,7 +15,9 @@ function App() {
     }}>
       <div className={styles.container}>
         <Header />
-        <main><Outlet /></main>
+        <main>
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </AppContext.Provider>

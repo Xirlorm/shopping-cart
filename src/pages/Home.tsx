@@ -59,19 +59,19 @@ function Home() {
       </section>
       <section className={styles.hotdeals}>
         <h3>Hot deals</h3>
-        <div>
+        <section>
           <button
             onClick={leftScroll}
             className={`${styles.scrollBtn} ${styles.scrollLeft}`}
           ><ChevronLeft size={20} /></button>
-          <section className={`deals ${styles.deals}`}>
+          <section className={`deals ${styles.items}`}>
             {hotdeals?.map(item => <Product details={item} />)}
           </section>
           <button
             onClick={rightScroll}
             className={`${styles.scrollBtn} ${styles.scrollRight}`}
           ><ChevronRight size={20} /></button>
-        </div>
+        </section>
       </section>
     </section>
   )
