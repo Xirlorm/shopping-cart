@@ -44,7 +44,7 @@
   top: 0;
   margin: 0;
   background-color: rgb(90, 131, 131);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header a {
@@ -145,7 +145,6 @@
   overflow-y: hidden;
   padding: 0.5rem;
   background-color: #fff;
-  margin: 0 -3.5rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -154,8 +153,11 @@
   display: none;
 }
 
-.hotdeals > h3,
-.category > h3 {
+.productList {
+  margin: 1rem 0.5rem;
+}
+
+.productList > h3 {
   text-transform: capitalize;
   background-color: #ce3c3c;
   margin: 0;
@@ -165,31 +167,31 @@
   font-weight: 700;
 }
 
-.hotdeals > section
-.category > section {
+.productList > section {
   display: flex;
   align-items: center;
+  margin: 0 -2rem;
 }
 
 .scrollBtn {
-  border-radius: 0.5rem;
-  padding: 0;
-  margin: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.507);
+  border: none;
+  border-radius: 0.4rem;
+  margin: 0;
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.664);
   color: #f8f1f1;
-  aspect-ratio: 1;
   z-index: 1;
   bottom: 0.6rem;
 }
 
 .scrollLeft {
   position: relative;
-  left: -0.4rem;
+  left: 1.5rem;
 }
 
 .scrollRight {
   position: relative;
-  right: -0.4rem;
+  right: 1.5rem;
 }
 
 .items {
@@ -206,8 +208,6 @@
 }
 
 .product:hover {
-  box-shadow: 2px 2px 4px #e0dfdf,
-              -2px -2px 3px #eee5e5;
   transition: transform .3s;
   transform: scale(1.05);
 }
