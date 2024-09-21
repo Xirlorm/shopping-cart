@@ -1,5 +1,7 @@
 function Cart() {
-  return <h2>Cart page</h2>
+  return <main className="cart">
+    <h2>Cart page</h2>
+  </main>
 }
 
 export default Cart
