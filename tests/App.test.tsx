@@ -35,15 +35,15 @@ describe("Header navigation", () => {
 
   it('Clicking Cart icon in header loads Cart page', async () => {
     const user = userEvent.setup();
-    const shopIcon = screen.getByRole('link', {name: 'cart'});
-    await user.click(shopIcon);
+    const cartIcon = screen.getByRole('link', {name: 'cart'});
+    await user.click(cartIcon);
     expect(screen.getByRole('main')).toHaveClass('cart');
   })
 
   it('Clicking Home icon in header loads Home page', async () => {
     const user = userEvent.setup();
-    const shopIcon = screen.getByRole('link', {name: 'home'});
-    await user.click(shopIcon);
+    const homeIcon = screen.getByRole('link', {name: 'home'});
+    await user.click(homeIcon);
     expect(screen.getByRole('main')).toHaveClass('home');
   })
 })
