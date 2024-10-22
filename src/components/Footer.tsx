@@ -7,7 +7,7 @@ function Footer() {
     <>
       <footer aria-label="footer" className={styles.footer}>
         <section>
-          <h1 className={styles.logo}>Shopping Cart</h1>
+          <h1 className={styles.logo}>Super sales</h1>
           <h3>Join Our Newsletter</h3>
           <p>
             Get E-mail updates about our latest products and special offers.
@@ -93,13 +93,10 @@ function Footer() {
                 Email: <a href="mailto:n0n3x1s73n7">nonexistent@gmail.com</a>
               </li>
               <li>
-                Address: <address>53xy Road, Location</address>
+                Address: <address>Abxy Road, Location</address>
               </li>
             </ul>
           </div>
-        </section>
-        <section>
-          Copyright &copy; 2024 Shopping cart. All Rights Reserved
         </section>
       </footer>
     </>

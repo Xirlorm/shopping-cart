@@ -3,10 +3,15 @@ import styles from '../styles/components.module.css'
 import { HomeIcon } from '@heroicons/react/20/solid'
 import { ShoppingBagIcon } from '@heroicons/react/20/solid'
 import { ShoppingCartIcon } from '@heroicons/react/20/solid'
+import { Search } from 'react-feather'
 
 function Header() {
   return <header aria-label="header" className={styles.header}>
-    <h1>Shopping Cart</h1>
+    <h1>Super sales</h1>
+    <form action="">
+      <input type="text" placeholder='What are you looking for?'/>
+      <button type='submit'><Search /></button>
+    </form>
     <nav>
       <li>
         <Link aria-label='home' to='/'>
