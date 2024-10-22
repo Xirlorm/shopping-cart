@@ -15,8 +15,4 @@ This is a basic shopping cart project as part of [The Odin Project](
 - Vitest
 - React testing library
 
-## Setup
-
 ## Screenshots
-
-## Credits
