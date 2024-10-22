@@ -7,8 +7,11 @@ body,
 
 :root {
   --primary-background: rgb(219, 224, 230);
-  --secondary-background: #84868b;
-  --tetiary-background: #869ea8;
+  --primary-foreground: #8f8181;
+  --secondary-background: #5483b3;
+  --secondary-foreground: #000000;
+  --secondary-placeholder: #e9dada;
+  --tetiary-background: #7da0ca;
   --secondary-text-shadow: #5c5353;
 }
 

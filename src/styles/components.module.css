@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'Galada Regular';
-  src: url(../assets/fonts/Galada-Regular.ttf);
+  font-family: 'LilitaOne Regular';
+  src: url(../assets/fonts/LilitaOne-Regular.ttf);
+  font-weight: 700;
 }
 
 @media  screen and (max-width: 480px) {
@@ -12,6 +13,10 @@
   .header nav {
     background-color: var(--tetiary-background);
     padding: 0.6rem;
+  }
+
+  .bannerImg {
+    min-width: 100%;
   }
 }
 
@@ -26,17 +31,22 @@
   .header {
     justify-content: space-between;
   }
+
+  .bannerImg {
+    max-width: 22rem;
+  }
 }
 
 .header {
   background-color: var(--secondary-background);
   color: aliceblue;
+  text-align: center;
 }
 
 .header h1 {
   font-size: 1.8rem;
   margin: 0;
-  font-family: 'Galada Regular';
+  font-family: 'LilitaOne Regular';
 }
 
 .header nav {
@@ -54,6 +64,36 @@
   color: #fcf6f6;
 }
 
+.header form {
+  border: none;
+  border-radius: 2rem;
+  background-color:#40a0c9;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.header form input {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem 0 0 3rem;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.header form button {
+  background: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin: 0.2rem;
+}
+
+.header form ::placeholder {
+  color: #a6d5e9;
+}
+
 .header a,
 .footer a {
   text-decoration: none;
@@ -65,11 +105,11 @@
 }
 
 .footer > section {
-  padding: 2rem 1.4rem;
+  padding: 2rem 1rem;
 }
 
 .footer h1 {
-  font-family: 'Galada Regular';
+  font-family: 'LilitaOne Regular';
 }
 
 .footer > section:nth-child(1) form {
@@ -83,22 +123,16 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: center;
   gap: 1rem;
-  color: #ddcccc;
+  color: #f0ebeb;
   background: var(--secondary-background);
 }
 
 .footer section:nth-child(2) h3 {
-  color: #eee4e4;
+  color: #ffffff;
 }
 
-.footer section:nth-child(3) {
-  text-align: center;
-  font-style: italic;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--secondary-background);
+.footer section:nth-child(2) > div {
+  margin-inline:  1rem;
 }
 
 .footer input{
@@ -122,7 +156,7 @@
 }
 
 .footer h3 {
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.2rem;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -131,6 +165,7 @@
   list-style: none;
   padding: 0;
   font-weight: 600;
+  margin: 0.1;
 }
 
 .footer li {
@@ -138,9 +173,34 @@
 }
 
 .footer a {
-  color: #ddcccc;
+  color: #f0ebeb;
 }
 
 .footer address {
   display: inline;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner p {
+  text-align: center;
+  font-weight: 600;
+  font-size: x-large;
+  line-height: 1.6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner button {
+  background-color: var(--secondary-background);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 0.8rem;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: medium;
 }
