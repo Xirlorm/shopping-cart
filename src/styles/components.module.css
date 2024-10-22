@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Galada Regular';
+  src: url(../assets/fonts/Galada-Regular.ttf);
+}
+
+@media  screen and (max-width: 480px) {
+  .header h1 {
+    text-align: center;
+    padding: 0.6rem;
+  }
+
+  .header nav {
+    background-color: var(--tetiary-background);
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.6rem 1rem;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+}
+
+.header {
+  background-color: var(--secondary-background);
+  color: aliceblue;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: 'Galada Regular';
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.4rem;
+}
+
+.header li {
+  list-style: none;
+}
+
+.headerIcon {
+  width: 1.5rem;
+  color: #fcf6f6;
+}
+
+.header a,
+.footer a {
+  text-decoration: none;
+}
+
+.footer {
+  font-family: sans-serif;
+  background-color: var(--primary-background);
+}
+
+.footer > section {
+  padding: 2rem 1.4rem;
+}
+
+.footer h1 {
+  font-family: 'Galada Regular';
+}
+
+.footer > section:nth-child(1) form {
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.footer section:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-content: center;
+  gap: 1rem;
+  color: #ddcccc;
+  background: var(--secondary-background);
+}
+
+.footer section:nth-child(2) h3 {
+  color: #eee4e4;
+}
+
+.footer section:nth-child(3) {
+  text-align: center;
+  font-style: italic;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-background);
+}
+
+.footer input{
+  border: none;
+  background-color: transparent;
+  padding: 0.8rem;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.footer input[type=email] {
+  max-width: 150px;
+}
+
+.footer input[type=submit] {
+  font-weight: 600;
+  color: #000000;
+  border-radius: 2rem;
+  margin: 0;
+  text-shadow: 3px 3px 4px var(--secondary-background);
+}
+
+.footer h3 {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.footer li {
+  padding: 0.25rem;
+}
+
+.footer a {
+  color: #ddcccc;
+}
+
+.footer address {
+  display: inline;
+}

@@ -4,3 +4,15 @@ body,
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --primary-background: rgb(219, 224, 230);
+  --secondary-background: #84868b;
+  --tetiary-background: #869ea8;
+  --secondary-text-shadow: #5c5353;
+}
+
+h1 {
+  margin: 0.2rem;
+  padding: 0;
+}
