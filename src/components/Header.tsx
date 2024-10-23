@@ -9,7 +9,7 @@ function Header() {
   return <header aria-label="header" className={styles.header}>
     <h1>Super sales</h1>
     <form action="">
-      <input type="text" placeholder='What are you looking for?'/>
+      <input type="text" placeholder='Looking for something?'/>
       <button type='submit'><Search /></button>
     </form>
     <nav>
