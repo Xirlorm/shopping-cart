@@ -66,8 +66,8 @@
 
 .header form {
   border: none;
-  border-radius: 2rem;
-  background-color:#40a0c9;
+  border-radius: 0.2rem;
+  background-color:#026691;
   display: inline-flex;
   align-items: center;
   margin: 0.8rem;
