@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <p style={{ textAlign: 'center', fontStyle: 'italic', padding: '0' }}>
-        Limited offer. Up to 70% off! Shop now!
+        Limited offer. Up to 60% off! Shop now!
       </p>
       <Header />
       <Outlet />
