@@ -25,15 +25,29 @@ function CategoryList() {
 
   const scrollRight = () => {
     const categories: HTMLElement | null = document.querySelector('.home .categories > div');
+
     if (categories !== null) {
-      categories.scrollBy({left: categories.offsetWidth, behavior: 'smooth'})
+      categories.scrollBy({
+        left: (
+          (categories.scrollWidth - categories.scrollLeft) <= categories.offsetWidth ?
+          -categories.scrollWidth :
+          categories.offsetWidth
+        ),
+        behavior: 'smooth'
+      })
     }
   }
 
   const scrollLeft = () => {
     const categories: HTMLElement | null = document.querySelector('.home .categories > div');
+    
     if (categories !== null) {
-      categories.scrollBy({left: -categories.offsetWidth, behavior: 'smooth'})
+      categories.scrollBy({
+        left: categories.scrollLeft == 0 ?
+          categories.scrollWidth :
+          -categories.offsetWidth,
+        behavior: 'smooth'
+      })
     }
   }
 
