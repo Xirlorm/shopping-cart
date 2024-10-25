@@ -1,31 +1,14 @@
-const endpoint = 'https://api.escuelajs.co/api/v1/';
-
- export async function getProducts() {
+export async function fetchEcommerceData(
+  endpointArgs: string,
+  args = { method: 'GET', mode: 'cors' },
+) {
   try {
     const response = await fetch(
-      endpoint + 'products',
-      { method: 'GET', mode: 'cors' }
+      `https://api.escuelajs.co/api/v1/${endpointArgs}`, args as RequestInit
     );
 
     if (response.status < 200 || response.status > 299)
-      throw Error("An error occured!")
-
-    const data = response.json();
-    return data;
-  } catch (error) {
-    return error;
-  }
-}
-
-export async function getCategories() {
-  try {
-    const response = await fetch(
-      endpoint + 'categories',
-      { method: 'GET', mode: 'cors' }
-    );
-
-    if (response.status < 200 || response.status > 299)
-      throw Error("An error occured!")
+      throw Error("An error has occured!")
 
     const data = response.json();
     return data;

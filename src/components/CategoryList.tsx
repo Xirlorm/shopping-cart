@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CategoryType } from '../lib/types';
 import styles from '../styles/components.module.css'
-import { getCategories } from '../lib/utilities';
+import { fetchEcommerceData } from '../lib/utilities';
 import Category from './Category';
 import { ArrowLeft, ArrowRight } from 'react-feather';
 
@@ -12,7 +12,7 @@ function CategoryList() {
     let flag = true;
 
     (() => {
-      getCategories().then(list => {
+      fetchEcommerceData('categories').then(list => {
         if (flag) {
           setCategories(list)
           flag = false;
@@ -40,7 +40,7 @@ function CategoryList() {
 
   const scrollLeft = () => {
     const categories: HTMLElement | null = document.querySelector('.home .categories > div');
-    
+
     if (categories !== null) {
       categories.scrollBy({
         left: categories.scrollLeft == 0 ?
