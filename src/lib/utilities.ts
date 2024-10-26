@@ -4,7 +4,7 @@ export async function fetchEcommerceData(
 ) {
   try {
     const response = await fetch(
-      `https://api.escuelajs.co/api/v1/${endpointArgs}`, args as RequestInit
+      `https://fakestoreapi.com/${endpointArgs}`, args as RequestInit
     );
 
     if (response.status < 200 || response.status > 299)
@@ -14,5 +14,31 @@ export async function fetchEcommerceData(
     return data;
   } catch (error) {
     return error;
+  }
+}
+export const scrollLeft = (element: string) => {
+  const categories: HTMLElement | null = document.querySelector(element);
+  if (categories !== null) {
+    categories.scrollBy({
+      left: categories.scrollLeft == 0 ?
+        categories.scrollWidth :
+        -categories.offsetWidth,
+      behavior: 'smooth'
+    })
+  }
+}
+
+export const scrollRight = (element: string) => {
+  const categories: HTMLElement | null = document.querySelector(element);
+
+  if (categories !== null) {
+    categories.scrollBy({
+      left: (
+        (categories.scrollWidth - categories.scrollLeft) <= categories.offsetWidth ?
+        -categories.scrollWidth :
+        categories.offsetWidth
+      ),
+      behavior: 'smooth'
+    })
   }
 }
