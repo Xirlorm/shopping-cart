@@ -224,13 +224,10 @@
   border-radius: 0.2rem;
 }
 
-.categoriesList > div {
+.categoriesList > div,
+.productList > div {
   display: flex;
-  align-items:  center;
-}
-
-.categoriesList > div {
-  display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   overflow: scroll;
   column-gap: 0.5rem;
@@ -238,7 +235,7 @@
   position: relative;
 }
 
-.categoriesList > div > div{
+.categoriesList > div > div {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -249,12 +246,12 @@
   min-width: 14rem;
 }
 
-.categoriesList h4 { 
+.categoriesList h4 {
   text-align: center;
   flex: 1;
 }
 
-.categoriesList img  {
+.categoriesList img {
   width: 8rem;
   border-radius: 0.5rem 0 0 0.5rem;
   aspect-ratio: 1;
@@ -274,14 +271,48 @@
   margin: 0;
 }
 
-.categoriesList ::-webkit-scrollbar {
+.categoriesList ::-webkit-scrollbar,
+.productList ::-webkit-scrollbar {
   display: none;
 }
 
-.categoriesList > div > button:first-child {
+.categoriesList > div > button:first-child,
+.productList > div > button:first-child {
   left: 0rem;
 }
 
-.categoriesList > div > button:last-child {
+.categoriesList > div > button:last-child,
+.productList > div > button:last-child {
   right: 0rem;
+}
+
+.product {
+  background-color: #f0e8e8;
+  border-radius: 0.2rem;
+}
+
+.productList img {
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 0.2rem 0.2rem 0 0;
+  background-color: #e7dbdb;
+}
+
+.product > div {
+  padding: 0.4rem;
+  margin: 0;
+  max-width: 9rem;
+}
+
+.product h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.product li {
+  list-style: none;
+  padding-block: 0.25rem;
 }
