@@ -1,3 +1,4 @@
+import { Minus, Plus } from "react-feather";
 import { ProductType } from "../lib/types"
 import styles from '../styles/components.module.css'
 
@@ -12,6 +13,11 @@ function Product({product}: ProductArg) {
       <div>
         <h4>{product.title}</h4>
         <li>${product.price}.00</li>
+        <div className={styles.addToCart + " addToCart"}>
+          <button><Plus /></button>
+          <input type="number" placeholder="0" value={0} />
+          <button><Minus /></button>
+        </div>
       </div>
     </div>
   );

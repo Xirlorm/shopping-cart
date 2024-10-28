@@ -213,12 +213,12 @@
 
 .productList,
 .categoriesList {
-  margin: 0.8rem 0;
+  margin: 1rem 0;
 }
 
 .productList h3,
 .categoriesList h3 {
-  background-color: #574747;
+  background-color: #026691;
   color: #fdfbfb;
   padding: 0.6rem;
   margin: 0;
@@ -234,7 +234,7 @@
   column-gap: 0.5rem;
   padding: 0.8rem 0.4rem;
   position: relative;
-  background: #ebeff0;
+  background: var(--primary-background);
 }
 
 .categoriesList > div > div {
@@ -270,8 +270,8 @@
   padding: 0.35rem;
   color: rgb(242, 242, 250);
   position: sticky;
-  opacity: 0.7;
   margin: 0;
+  z-index: 2;
 }
 
 .categoriesList ::-webkit-scrollbar,
@@ -290,21 +290,28 @@
 }
 
 .product {
-  background-color: #f0e8e8;
-  border-radius: 0.2rem;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  text-align: center;
+  transition: scale ease-in-out .2s;
 }
+
+.product:hover {
+  scale: 1.04;
+  box-shadow: 3px 3px 5px #cfc7c7, -3px -3px 5px #e7e3e3}
 
 .productList img {
   width: 10rem;
   aspect-ratio: 1;
-  border-radius: 0.2rem 0.2rem 0 0;
-  background-color: #e7dbdb;
+  object-fit: contain;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #ffffff;
 }
 
 .product > div {
   padding: 0.4rem;
-  margin: 0;
-  max-width: 9rem;
+  max-width: 9.2rem;
 }
 
 .product h4 {
@@ -318,4 +325,26 @@
 .product li {
   list-style: none;
   padding-block: 0.25rem;
+}
+
+.addToCart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0rem;
+  margin: 0;
+}
+
+.addToCart button{
+  border: none;
+  background: none;
+}
+
+.addToCart input {
+  border: none;
+  background-color: #f0ebeb;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  width: 1.8rem;
+  text-align: center;
 }
