@@ -17,12 +17,12 @@ function Product({product}: ProductArg) {
         <h4>{product.title}</h4>
         <li>${product.price}.00</li>
         <div className={styles.addToCart + " addToCart"}>
-          <button onClick={() => {setAmountPicked(val => val + 1)}}>
-            <Plus />
-          </button>
-          <input type="number" placeholder="0" value={amountPicked} />
           <button onClick={() => {setAmountPicked(val => val > 0 ? val - 1 : val)}}>
             <Minus />
+          </button>
+          <input type="number" placeholder="0" value={amountPicked} />
+          <button onClick={() => {setAmountPicked(val => val + 1)}}>
+            <Plus />
           </button>
         </div>
       </div>
